@@ -47,7 +47,7 @@ def binary_search(arr, target):
     while low <= high:
 
         # Guess midpoint between low and high (rounded down)
-        guess = math.ceil(low + (high - 1) / 2)
+        guess = math.ceil((low + (high - 1)) / 2)
 
         if arr[guess] == target:
             return guess
@@ -62,7 +62,7 @@ def binary_search(arr, target):
 
 
 arr2 = [-9, -8, -6, -4]
-print("| Linear Search |")
+print("| Binary Search |")
 print(f"Index of target: {binary_search(arr2, -4)}")
 print("")
 
